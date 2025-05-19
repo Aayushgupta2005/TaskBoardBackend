@@ -18,7 +18,3 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((err) => console.error("Mongo error:", err));
 
 app.use("/api/tasks", taskRoutes);
-
-app.get("/", (req, res) => {
-    res.send("Hello World");
-})
